@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Basic Calculator</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="./style.css">
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+</head>
+
+<body class="light-theme">
+    <div class="d-flex justify-content-center mt-6" style="margin-top: 2%;">
+        <button type="button" class="btn btn-light me-2" onclick="setLightTheme()">Light Theme</button>
+        <button type="button" class="btn btn-dark" onclick="setDarkTheme()">Dark Theme</button>
+    </div>
+    <div class="container">
+        <h1 class="text-center text-info mb-4 mt-3">Simple Calculator</h1>
+        <div class="row justify-content-center">
+            <div class="col-lg-4">
+                <input type="text" id="result_box" class="form-control mb-2" />
+                <div class="table-responsive">
+                    <table class="table table-secondary">
+                        <tbody>
+                            <tr class="">
+                                <td scope="row"><button type="button" onclick="oprand(1)" class="btn btn-outline-primary">
+                                    1
+                                </button></td>
+                                <td scope="row"><button type="button" onclick="oprand(2)" class="btn btn-outline-primary">
+                                    2
+                                </button></td>
+                                <td scope="row"><button type="button" onclick="oprand(3)" class="btn btn-outline-primary">
+                                    3
+                                </button></td>
+                                <td scope="row"><button type="button" onclick="oprand(4)" class="btn btn-outline-primary">
+                                    4
+                                </button></td>
+                                <td scope="row"><button type="button" onclick="oprand(5)" class="btn btn-outline-primary">
+                                    5
+                                </button></td>
+                            </tr>
+                            <tr class="">
+                                <td scope="row"><button type="button" onclick="oprand(6)" class="btn btn-outline-primary ">
+                                    6
+                                </button></td>
+                                <td scope="row"><button type="button" onclick="oprand(7)" class="btn btn-outline-primary ">
+                                    7
+                                </button></td>
+                                <td scope="row"><button type="button" onclick="oprand(8)" class="btn btn-outline-primary ">
+                                    8
+                                </button></td>
+                                <td scope="row"><button type="button" onclick="oprand(9)" class="btn btn-outline-primary ">
+                                    9
+                                </button></td>
+                                <td scope="row"><button type="button" onclick="oprand(0)" class="btn btn-outline-primary ">
+                                    0
+                                </button></td>
+                            </tr>
+                            <tr class="">
+                                <td scope="row"><button type="button" class="btn btn-outline-primary " onclick="operators('+')">
+                                    +
+                                </button></td>
+                                <td scope="row"><button type="button" class="btn btn-outline-primary " onclick="calculation('=')">
+                                    =
+                                </button></td>
+                                <td scope="row"><button type="button" class="btn btn-outline-primary " onclick="operators('/')">
+                                    /
+                                </button></td>
+                                <td scope="row"><button type="button" class="btn btn-outline-primary " onclick="operators('-')">
+                                    -
+                                </button></td>
+                                <td scope="row"><button type="button" class="btn btn-outline-primary " onclick="clearAll()">
+                                    cc
+                                </button></td>
+                            </tr>
+                            <tr class="">
+                                <td scope="row"><button type="button" class="btn btn-outline-primary " onclick="sqrt()">
+                                    √
+                                </button></td>
+                                <td scope="row"><button type="button" class="btn btn-outline-primary " onclick="log10()">
+                                    log
+                                </button></td>
+                                <td scope="row"><button type="button" class="btn btn-outline-primary " onclick="square()">
+                                    x²
+                                </button></td>
+                                <td><button type="button" class="btn btn-outline-primary " onclick="cube()">x³
+                                </button></td>
+                              <td scope="row"><button type="button" class="btn btn-outline-primary" onclick="deleteLast()">
+                                    del
+                                </button></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="./cal.js"></script>
+</body>
+
+</html>

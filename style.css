@@ -1,0 +1,35 @@
+body.light-theme {
+    background-color: white;
+    color: black;
+}
+
+body.dark-theme {
+    background-color: black;
+    color: white;
+}
+
+.light-theme .btn {
+    color: black;
+    background-color: white;
+    border-color: black;
+}
+
+.dark-theme .btn {
+    color: white;
+    background-color: black;
+    border-color: white;
+}
+
+.light-theme .btn-outline-primary {
+    color: black;
+    border-color: black;
+}
+
+.dark-theme .btn-outline-primary {
+    color: white;
+    border-color: white;
+}
+
+.table-success {
+    background-color: inherit;
+}
